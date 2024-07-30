@@ -44,7 +44,7 @@ a:hover {
 .pets-nav  a.nav-link {
 	padding-top: 35px !important;
 	padding-bottom: 35px !important;
-	color: #ffffff !important;
+	color: #000000 !important;
 }
 
 /* Custom Classes */
@@ -80,7 +80,7 @@ a:hover {
 	background: -webkit-linear-gradient(135deg, hsla(18, 99%, 48%, 1) 0%, hsla(25, 100%, 50%, 1) 100%);
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F54A01", endColorstr="#FF6A00", GradientType=1 );
 	border-color: #F54A01 !important;
-	color: #fff;
+	color: #000000;
 }
 .btn-danger:hover {
 	background: hsla(18, 99%, 48%, 1);
@@ -89,7 +89,7 @@ a:hover {
 	background: -webkit-linear-gradient(360deg, hsla(18, 99%, 48%, 1) 0%, hsla(25, 100%, 50%, 1) 100%);
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F54A01", endColorstr="#FF6A00", GradientType=1 );
 	border-color: #F54A01 !important;
-	color: #fff;
+	color: #000000;
 }
 .btn-outline-danger {
 	border-color: #F54A01 !important;
@@ -98,7 +98,7 @@ a:hover {
 .btn-outline-danger:hover {
 	background-color: #F54A01 !important;
 	border-color: #F54A01 !important;
-	color: #fff;
+	color: #000
 }
 .bg-danger {
 	background: hsla(18, 99%, 48%, 1);
@@ -131,7 +131,7 @@ a:hover {
 
 /* Homepage */
 .homepage {
-	background-image: url(../img/bg.svg);
+	background-image:url(../img/bg.svg) ;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
