@@ -225,32 +225,30 @@
                         <div class="rounded-4 border osahan-sidebar bg-white mb-4">
                             <div class="text-center p-5 border-bottom">
                                 <img src="../img/pages/team/member-1.jpg" alt="customer" class="img-fluid rounded-circle profile-img cw-80 ch-80 mb-4">
-                                <h3 class="fw-bold mb-1">Jose Fuller</h3>
-                                <p class="m-0 text-muted">example@gmail.com</p>
+                                <h3 class="fw-bold mb-1">김선우</h3>
+                                <p class="m-0 text-muted">tjsdn2587@gmail.com</p>
                             </div>
                             <div class="p-4 osahan-sidebar-links">
-                                <a class="dropdown-item" href="account-orders.html"><i class="ri-file-list-line me-2"></i> Orders</a>
-                                <a class="dropdown-item" href="account-settings.html"><i class="ri-settings-line me-2"></i> Settings</a>
-                                <a class="dropdown-item active" href="account-address.html"><i class="ri-map-pin-line me-2"></i> Address</a>
-                                <a class="dropdown-item" href="my-wallet.html"><i class="ri-wallet-line me-2"></i> My Wallet</a>
-                                <a class="dropdown-item" href="account-notification.html"><i class="ri-notification-line me-2"></i> Notification</a>
-                                <a class="dropdown-item" href="../index.html"><i class="ri-logout-circle-line me-2"></i> Logout</a>
+                                <a class="dropdown-item" href="account-orders.html"><i class="ri-file-list-line me-2"></i>주문</a>
+                                <a class="dropdown-item" href="account-settings.html"><i class="ri-settings-line me-2"></i> 내정보 수정</a>
+                                <a class="dropdown-item active" href="account-address.html"><i class="ri-map-pin-line me-2"></i>배송 주소</a>
+                                <a class="dropdown-item" href="../index.html"><i class="ri-logout-circle-line me-2"></i>로그아웃</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-8 ps-lg-0 pb-5">
                         <div class="ps-lg-5 pt-lg-5">
                             <div class="d-flex align-items-center justify-content-between w-100 mb-5">
-                                <h1 class="m-0 fw-bold">Addresses</h1>
+                                <h1 class="m-0 fw-bold">배송 주소</h1>
                             </div>
                             <div>
                                 <div>
                                     <div class="d-flex align-items-start justify-content-between border rounded-4 border-secondary-emphasis p-4 mb-4">
                                         <div>
-                                            <span class="px-3 py-2 rounded-pill bg-opacity-purple text-purple mb-2 badge">DEFAULT</span>
-                                            <h6 class="fw-bold mb-1 mt-2">Work</h6>
-                                            <p class="text-secondary-emphasis mb-2">Apart 4 New York, NY 10001 US</p>
-                                            <p class="fw-bold mb-0">+91 12345-67890</p>
+                                            <span class="px-3 py-2 rounded-pill bg-opacity-purple text-purple mb-2 badge">기본</span>
+                                            <h6 class="fw-bold mb-1 mt-2">집</h6>
+                                            <p class="text-secondary-emphasis mb-2">서울시 노원구 중계동</p>
+                                            <p class="fw-bold mb-0">010-2345-6780</p>
                                         </div>
                                         <div class="d-flex align-items-cneter gap-2">
                                             <a href="#" data-bs-toggle="modal" data-bs-target="#addaddress" class="btn btn-outline-secondary rounded-3"> <i class="ri-edit-box-fill"></i> </a>
@@ -259,17 +257,17 @@
                                     </div>
                                     <div class="d-flex align-items-start justify-content-between border rounded-4 border-secondary-emphasis p-4 mb-4">
                                         <div>
-                                            <span class="px-3 py-2 rounded-pill bg-opacity-purple text-purple mb-2 badge">HOME</span>
-                                            <h6 class="fw-bold mb-1 mt-2">Office</h6>
-                                            <p class="text-secondary-emphasis mb-2">Apart 4 New York, NY 10001 US</p>
-                                            <p class="fw-bold mb-0">+91 12345-67890</p>
+                                            <span class="px-3 py-2 rounded-pill bg-opacity-purple text-purple mb-2 badge">직장</span>
+                                            <h6 class="fw-bold mb-1 mt-2">사무실</h6>
+                                            <p class="text-secondary-emphasis mb-2">서울 중랑구 중화역</p>
+                                            <p class="fw-bold mb-0">010-1245-6890</p>
                                         </div>
                                         <div class="d-flex align-items-cneter gap-2">
                                             <a href="#" data-bs-toggle="modal" data-bs-target="#addaddress" class="btn btn-outline-secondary rounded-3"> <i class="ri-edit-box-fill"></i> </a>
                                             <a href="#" data-bs-toggle="modal" data-bs-target="#delete" class="btn btn-outline-danger rounded-3"> <i class="ri-delete-bin-5-fill"></i> </a>
                                         </div>
                                     </div>
-                                    <a href="#" class="btn btn-purple btn-theme w-100 rounded-3" data-bs-toggle="modal" data-bs-target="#addaddress"> <i class="ri-add-fill me-2"></i>ADD A NEW ADDRESS </a>
+                                    <a href="#" class="btn btn-purple btn-theme w-100 rounded-3" data-bs-toggle="modal" data-bs-target="#addaddress"> <i class="ri-add-fill me-2"></i>새 배송주소 생성 </a>
                                 </div>
                             </div>
                         </div>
@@ -282,14 +280,14 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-white border-0 rounded-4 overflow-hidden">
                     <div class="modal-body p-5">
-                        <h4 class="fw-bold pb-3">Add a New Address</h4>
+                        <h4 class="fw-bold pb-3">새 배송주소 생성</h4>
                         <form class="row g-3">
                             <div class="col-md-6 col-12">
-                                <label for="inputName1" class="form-label">Name</label>
+                                <label for="inputName1" class="form-label">이름</label>
                                 <input type="text" class="form-control bg-transparent" id="inputName1" value="James Carter">
                             </div>
                             <div class="col-md-6 col-12">
-                                <label for="inputEmail4" class="form-label">Email</label>
+                                <label for="inputEmail4" class="form-label">이메일</label>
                                 <input type="email" class="form-control bg-transparent" id="inputEmail4" value="example@gmail.com">
                             </div>
                             <div class="col-12">
@@ -327,8 +325,8 @@
                         </form>
                     </div>
                     <div class="modal-footer border-0 p-0">
-                        <a href="#" class="btn btn-outline-secondary rounded-0 m-0 border-0 border-top rounded-0 py-3 w-50" data-bs-dismiss="modal"> <i class="ri-close-fill me-2"></i>Cancel </a>
-                        <a href="#" class="btn btn-purple m-0 rounded-0 py-3 border-0 border-top w-50" data-bs-dismiss="modal"> <i class="ri-add-line me-2"></i>ADD </a>
+                        <a href="#" class="btn btn-outline-secondary rounded-0 m-0 border-0 border-top rounded-0 py-3 w-50" data-bs-dismiss="modal"> <i class="ri-close-fill me-2"></i>취소 </a>
+                        <a href="#" class="btn btn-purple m-0 rounded-0 py-3 border-0 border-top w-50" data-bs-dismiss="modal"> <i class="ri-add-line me-2"></i>만들기 </a>
                     </div>
                 </div>
             </div>
@@ -349,26 +347,6 @@
             </div>
         </div>
         <!-- Build Something Together -->
-        <div class="pt-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="build-something-together shadow rounded-4 py-5">
-                            <div class="text-center text-white py-5">
-                                <div class="mb-4">
-                                    <h1 class="fw-bold display-5">Let’s Build Something Together</h1>
-                                    <p class="lead mt-3 text-white-50 mb-4 pb-2">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br>
-                                        labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                                <a href="#" class="btn btn-purple px-4 btn-lg rounded-pill">Reach Out now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- footer -->
         <footer class="footer">
             <div class="footer-top bg-black text-white py-5 mt-5">
@@ -400,34 +378,6 @@
                                         <a href="contact-us.html" class="small link-secondary">+1 212-835-5044</a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="mb-5">
-                                <h6 class="fw-bold pb-2">About Us</h6>
-                                <ul class="list-unstyled d-grid gap-2">
-                                    <li><a href="#" class="link-secondary">About Organization</a></li>
-                                    <li><a href="#" class="link-secondary">Our Clients</a></li>
-                                    <li><a href="#" class="link-secondary">Our Partners</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h6 class="fw-bold pb-2">Achievements</h6>
-                                <p class="text-secondary-emphasis">Vim in meis verterem menandri, ea iuvaret delectus verterem qui, nec ad ferri corpora.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="mb-5">
-                                <h6 class="fw-bold pb-2">Quick links</h6>
-                                <ul class="list-unstyled d-grid gap-2">
-                                    <li><a href="#" class="link-secondary">Simple Product</a></li>
-                                    <li><a href="#" class="link-secondary">Variable Product</a></li>
-                                    <li><a href="#" class="link-secondary">Grouped Product</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h6 class="fw-bold pb-2">Useful Information</h6>
-                                <p class="text-secondary-emphasis">Vim in meis verterem menandri, ea iuvaret delectus verterem qui, nec ad ferri corpora.</p>
                             </div>
                         </div>
                         <div class="col-lg-3">
