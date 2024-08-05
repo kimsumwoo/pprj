@@ -44,7 +44,7 @@ a:hover {
 .pets-nav  a.nav-link {
 	padding-top: 35px !important;
 	padding-bottom: 35px !important;
-	color: #000000 !important;
+	color: #fff !important;
 }
 
 /* Custom Classes */
@@ -80,7 +80,7 @@ a:hover {
 	background: -webkit-linear-gradient(135deg, hsla(18, 99%, 48%, 1) 0%, hsla(25, 100%, 50%, 1) 100%);
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F54A01", endColorstr="#FF6A00", GradientType=1 );
 	border-color: #F54A01 !important;
-	color: #000000;
+	color: #ffffff;
 }
 .btn-danger:hover {
 	background: hsla(18, 99%, 48%, 1);
