@@ -51,7 +51,7 @@
                                             <div class="col-lg-3 p-5 border-end border-opacity-10 border-dark">
                                                 <h6 class="dropdown-mega-sub-title mb-3 fw-bold">Shop</h6>
                                                 <ul class="dropdown-mega-sub-nav list-unstyled">
-                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="./0_blog-grid-classic.html">0_Product Grid</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="./0_shop-product-grid.html">0_Product Grid</a></li>
                                                     <li><a class="dropdown-item px-0 py-1 bg-transparent" href="./0_shop-product-detail.html">0_Product Detail</a></li>
                                                     <li><a class="dropdown-item px-0 py-1 bg-transparent" href="./0_shop-cart.html">0_Shop Cart</a></li>
                                                     <li><a class="dropdown-item px-0 py-1 bg-transparent" href="./0_shop-checkout.html">0_Shop Checkout</a></li>
@@ -76,7 +76,7 @@
                             </ul>
                         </li>
                     </ul>
-                            <a href="../index.html" class="btn btn-purple rounded-pill d-none d-lg-block btn-theme"> <i class="ri-shopping-cart-line me-2"></i> Purchase Now </a>
+                            <a href="../index.html" class="btn btn-purple rounded-pill d-none d-lg-block btn-theme"> <i class="ri-shopping-cart-line me-2"></i> 장바구니로 가기 </a>
                             <a href="#" class="link-light d-lg-none ms-auto" data-bs-toggle="offcanvas" data-bs-target="#sidebarnav" aria-controls="sidebarnav"><i class="ri-menu-3-line ri-lg"></i></a>
                         </div>
                     </div>
@@ -103,16 +103,21 @@
             <div class="container">
                 <div class="row g-4">
                     <div class="col-lg-6 col-12">
-                        <h5 class="fw-bold pb-2">Bill details</h5>
+                        <h5 class="fw-bold pb-2">주문지</h5>
                         <form class="row g-3">
                             <div class="col-md-12">
                                 <label for="inputFirstName" class="form-label small text-muted">받는 사람</label>
                                 <input type="text" class="form-control" aria-label="inputFirstName">
                             </div>
-                            <div class="col-12">
-                                <label for="inputCompnay" class="form-label small text-muted">Company name (optional)</label>
+                            <div class="col-3">
+                                <label for="inputCompnay" class="form-label small text-muted">우편번호</label>
                                 <input type="text" class="form-control" id="inputCompnay">
                             </div>
+                            <div class="col-3">
+                                <br>
+                                <button type="button" class="btn btn- mb-2 me-2">주소검색</button>
+                            </div>
+                          
                             <div class="col-12">
                                 <label for="selectcountry" class="form-label small text-muted">Country / Region</label>
                                 <select class="form-select" aria-label="selectcountry">
