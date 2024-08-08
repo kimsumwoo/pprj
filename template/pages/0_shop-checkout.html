@@ -76,8 +76,11 @@
                             </ul>
                         </li>
                     </ul>
-                            <a href="../index.html" class="btn btn-purple rounded-pill d-none d-lg-block btn-theme"> <i class="ri-shopping-cart-line me-2"></i> 장바구니로 가기 </a>
-                            <a href="#" class="link-light d-lg-none ms-auto" data-bs-toggle="offcanvas" data-bs-target="#sidebarnav" aria-controls="sidebarnav"><i class="ri-menu-3-line ri-lg"></i></a>
+                            <a href="./0_shop-cart.html" class="btn btn-purple rounded-pill d-none d-lg-block btn-theme"> <i class="ri-shopping-cart-line me-2"></i> 장바구니로 가기 </a>
+                            <div class="d-flex align-items-center gap-4 ms-auto ms-lg-0 ps-4">
+                                <a href="./0_account-orders.html" class="link-light d-none d-lg-block"><i class="ri-account-pin-circle-fill ri-lg"></i></a>
+                                <a href= "../0_index.html" class="nav-link" href="contact.html">로그아웃</a>
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -88,8 +91,7 @@
                     <div class="row align-items-center justify-content-center">
                         <div class="col-xl-6 col-lg-5 col-md-10 col-12 text-center">
                             <div class="text-white">
-                                <h1 class="fw-bolder display-5 mb-3">Checkout</h1>
-                                <p class="m-0 text-white-50">Last updated: January 2024</p>
+                                <h1 class="fw-bolder display-5 mb-3">주문/결제</h1>
                             </div>
                         </div>
                     </div>
@@ -103,92 +105,96 @@
             <div class="container">
                 <div class="row g-4">
                     <div class="col-lg-6 col-12">
-                        <h5 class="fw-bold pb-2">주문지</h5>
                         <form class="row g-3">
+                    
+                            <label for="inputFirstName" class="form-label small text-muted">받는 사람</label>
                             <div class="col-md-12">
-                                <label for="inputFirstName" class="form-label small text-muted">받는 사람</label>
                                 <input type="text" class="form-control" aria-label="inputFirstName">
                             </div>
-                            <div class="col-3">
-                                <label for="inputCompnay" class="form-label small text-muted">우편번호</label>
+                    
+                      
+                            <label for="inputCompnay" class="form-label small text-muted">우편번호</label>
+                            <div class="col-4">
                                 <input type="text" class="form-control" id="inputCompnay">
                             </div>
                             <div class="col-3">
-                                <br>
-                                <button type="button" class="btn btn- mb-2 me-2">주소검색</button>
+                                <button type="button " class="btn btn-dark">주소검색</button>
                             </div>
-                          
+                    
                             <div class="col-12">
-                                <label for="selectcountry" class="form-label small text-muted">Country / Region</label>
-                                <select class="form-select" aria-label="selectcountry">
-                                    <option selected>United State (US)</option>
-                                    <option value="1">India</option>
-                                    <option value="2">London</option>
-                                    <option value="3">Germany</option>
+                                <input type="text" class="form-control mb-3" id="inputAddress" placeholder="기본주소">
+                                <input type="text" class="form-control" id="inputAddress" placeholder="상세주소 입력">                               
+                            </div><br><br><br><br><br>
+                      
+                        
+                            <label for="inputAddress" class="form-label small text-muted">휴대전화</label>
+                            <div class="col-3"> 
+                                <select class="form-select mb-3" aria-label="selectcountry">
+                                    <option value="010">010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                    <option value="018">018</option>
+                                    <option value="019">019</option>
                                 </select>
                             </div>
-                            <div class="col-12">
-                                <label for="inputAddress" class="form-label small text-muted">Street address</label>
-                                <input type="text" class="form-control mb-3" id="inputAddress" placeholder="House no and street name">
-                                <input type="text" class="form-control" id="inputAddress" placeholder="Apartmant, suits, unit, etc">
+                            <br>-
+                            <div class="col-3">
+                                <input type="inputphone" class="form-control mb-3" id="inputAddress" placeholder="">
                             </div>
-                            <div class="col-12">
-                                <label for="inputTown" class="form-label small text-muted">Town / City</label>
-                                <input type="text" class="form-control" id="inputTown">
+                            <br>-
+                            <div class="col-3">
+                                <input type="" class="form-control mb-3" id="inputAddress" placeholder="">
                             </div>
-                            <div class="col-12">
-                                <label for="selectcountry" class="form-label small text-muted">State</label>
-                                <select class="form-select" aria-label="selectcountry">
-                                    <option selected>Punjab</option>
-                                    <option value="1">Jalandhar</option>
-                                    <option value="2">Ludhiana</option>
-                                    <option value="3">Gujrat</option>
+                       
+                            
+         
+                                <label for="inputTown" class="form-label small text-muted">이메일</label>
+                            <div id ="email1" class="col-4">
+                                <input type="email" class="form-control" id="inputTown">
+                            </div>
+                           <br> @
+                            <div id ="email2" class="col-4">
+                                <input type="text" class="form-control" id="inputCompnay">
+                            </div>
+                            <div class="col-3">
+                                <select id ="emailSelection" class="form-select mb-3" aria-label="selectcountry" name ="emailSelection">
+                                    <option value="email">-이메일 선택-</option>
+                                    <option value="nave.com">naver.com</option>
+                                    <option value="nate.com">nate.com</option>
+                                    <option value="gmail.com">gmail.com</option>
+                                    <option value="hanmail.com">hanmail.com</option>
+                                    <option value="daum.com">daum.com</option>
+                                    <option value="1">직접입력</option>
                                 </select>
                             </div>
+                            <h5 class="fw-bold pt-3 mb-0">배송 메세지</h5>
                             <div class="col-12">
-                                <label for="inputphone" class="form-label small text-muted">Phone</label>
-                                <input type="text" class="form-control" id="inputphone">
-                            </div>
-                            <div class="col-12">
-                                <label for="inputEmail" class="form-label small text-muted">Email</label>
-                                <input type="email" class="form-control" id="inputEmail">
-                            </div>
-                            <h5 class="fw-bold pt-3 mb-0">Additional information</h5>
-                            <div class="col-12">
-                                <label for="exampleFormControlTextarea1" class="form-label small text-muted">Order notes (optional)</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Note About your Order" rows="5"></textarea>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="메세지를 입력해 주세요(선택사항)" rows="5"></textarea>
                             </div>
                         </form>
                     </div>
                     <div class="col-lg-6 col-12 ps-lg-5">
                         <div class="sticky-sidebar">
                             <div class="border p-5 rounded-4">
-                                <h5 class="fw-bold pb-2">Your order</h5>
+                                <h5 class="fw-bold pb-2">주문상품</h5>
                                 <div class="d-flex align-items-center justify-content-between border-bottom py-3">
-                                    <h6 class="fw-bold mb-0">Product</h6>
-                                    <h6 class="fw-bold mb-0">Subtotal</h6>
+                                    <h6 class="fw-bold mb-0">제품</h6>
+                                    <h6 class="fw-bold mb-0">금액</h6>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between border-bottom py-3">
-                                    <h6 class="mb-0">Mollis nunc sed id semper risus in hendrerit × 1</h6>
-                                    <p class="mb-0">$45.00</p>
+                                    <h6 class="mb-0">오리통다리 × 2</h6>
+                                    <p class="mb-0">16,000원</p>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between border-bottom py-3">
-                                    <h6 class="fw-bold mb-0">Subtotal</h6>
-                                    <p class="fw-bold mb-0">$45.00</p>
+                                    <h6 class="fw-bold mb-0">금액</h6>
+                                    <p class="fw-bold mb-0">16,000원</p>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between py-3">
-                                    <h5 class="fw-bold mb-0 text-purple">Total</h5>
-                                    <p class="fw-bold mb-0 h5 text-purple">$45.00</p>
+                                    <h5 class="fw-bold mb-0 text-purple">총금액</h5>
+                                    <p class="fw-bold mb-0 h5 text-purple">16,000원</p>
                                 </div>
-                                <div class="bg-secondary-subtle d-flex gap-3 p-3 rounded-3">
-                                    <i class="ri-notification-2-line ri-xl text-muted pt-2"></i>
-                                    <p class="m-0 small text-muted">Sorry, it seems that there are no available payment methods for your state. Please contact us if you require assistance or wish to make alternate arrangements.</p>
-                                </div>
-                                <p class="small py-3">
-                                    Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our
-                                    <a href="privacy-policy.html" class="text-decoration-underline text-purple">privacy policy.</a>
-                                </p>
-                                <a href="account-orders.html" class="btn btn-purple px-3 py-3 w-100">Place order</a>
+                                <a href="account-orders.html" class="btn btn-purple px-3 py-3 w-100">주문하기</a>
                             </div>
                         </div>
                     </div>
