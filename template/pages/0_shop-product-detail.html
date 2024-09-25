@@ -136,8 +136,9 @@
                     <div class="col-lg-6 col-12 ps-lg-5">
                         <p class="text-uppercase text-purple mb-1 fw-bold"></p>
                         <h1 class="fw-bold pb-2 display-5">오리통다리</h1>
+                        <i class="ri-star-fill text-warning"></i> <i class="ri-star-fill text-warning"></i> <i class="ri-star-fill text-warning"></i> <i class="ri-star-fill text-warning"></i>
+                                    <i class="ri-star-fill text-body-tertiary"></i>
                         <div class="d-flex align-items-center gap-1 mb-3">
-                            <i class="ri-star-fill text-warning"></i> <i class="ri-star-fill text-warning"></i> <i class="ri-star-fill text-warning"></i> <i class="ri-star-fill text-warning"></i> <i class="ri-star-fill text-warning"></i>
                             <a href="#" class="small ps-2">(1 customer review)</a>
                         </div>
                         <h5 class="fw-bold">7000원</h5>
@@ -228,14 +229,14 @@
                                     <div class="col-lg-6 col-12">
                                         <div class="mb-3">
                                             <h4 class="fw-bold">Add a review</h4>
-                                            <p>Your email address will not be published. Required fields are marked *</p>
-                                            <div class="d-flex gap-4">
-                                                <p class="mb-0">Your Rating:</p>
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <i class="ri-star-fill text-warning"></i> <i class="ri-star-fill text-warning"></i> <i class="ri-star-fill text-warning"></i> <i class="ri-star-fill text-warning"></i>
-                                                    <i class="ri-star-fill text-warning"></i>
-                                                </div>
-                                            </div>
+                                            <p>Your email address will not be published. Required fields are marked </p>
+                                            <div class ="star_rating">
+                                                <span class="star on" value="1"></span>
+                                                <span class="star" value="2"> </span>
+                                                <span class="star" value="3"> </span>
+                                                <span class="star" value="4"> </span>
+                                                <span class="star" value="5"> </span>
+                                              </div>
                                         </div>
                                         <form>
                                             <div class="mb-3"><textarea class="form-control bg-transparent" id="exampleFormControlTextarea1" rows="5" placeholder="Your review"></textarea></div>
@@ -371,5 +372,10 @@
         <script src="../js/slick.js"></script>
         <!-- Custom Js -->
         <script src="../js/script.js"></script>
+        <!-- 별점 -->
+        <script>$('.star_rating > .star').click(function() {
+            $(this).parent().children('span').removeClass('on');
+            $(this).addClass('on').prevAll('span').addClass('on');
+          })</script>
     </body>
 </html>
