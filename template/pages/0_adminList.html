@@ -71,7 +71,7 @@ td, th {
 </head>
 
 <body>
-	<form name ="formList" method = "post" action ="/xdm/v1/infra/codegroup/codeGroupXdmList" autocomplete="off">
+	<form name ="formList" method = "post" action = autocomplete="off">
 
 	<!-- Loading wrapper start -->
 	<!-- <div id="loading-wrapper">
@@ -380,7 +380,7 @@ td, th {
 										<div class="mb-3">
 											<select class="form-select" id="inputIndustryType" name ="shcgDelNy">
 												<option value="">삭제여부</option>
-												<option value="0" name="shcgDelNy">N</option>
+												<option value="0">N</option>
 												<option value="1">Y</option>
 											</select>
 										</div>
@@ -469,7 +469,7 @@ td, th {
 
 								<div class="col-1">
 									<div class="mb-3">
-										<p style="font-size: 25px;" th:text="'Total:'+${vo.totalRows}"></p>
+										<p style="font-size: 25px;"></p>
 									</div>
 								</div>
 
@@ -506,9 +506,7 @@ td, th {
 													</td>
 													<td></td>
 													<td ></td>
-													<td><a>
-														</a>
-													</td>
+													<td></td>
 													<td></td>
 													<td>N</td>
 													<td>Y</td>	
