@@ -72,8 +72,7 @@ td, th {
 
 <body>
 	<form name ="formList" method = "post" action ="/xdm/v1/infra/codegroup/codeGroupXdmList" autocomplete="off">
-	<input type="hidden" name="thisPage" th:value="${vo.thisPage}" default="1"/>
-	<input type="hidden" id="rowNumToShow" name="rowNumToShow" th:value="${vo.rowNumToShow}"/>
+
 	<!-- Loading wrapper start -->
 	<!-- <div id="loading-wrapper">
 			<div class="spinner">
@@ -438,7 +437,7 @@ td, th {
 										class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm- col-12">
 										<div class="mb-3">
 											<input type="text" class="form-control" id="shValue"
-												name ="shValue" th:value="${vo.shValue}">
+												name ="shValue">
 										</div>
 									</div>
 									<!-- 버튼 -->
@@ -506,8 +505,8 @@ td, th {
 														value="" id="flexCheckDefault">
 													</td>
 													<td></td>
-													<td th:text="${list.cgSeq}"></td>
-													<td><a th:text="${list.cgName}">
+													<td ></td>
+													<td><a>
 														</a>
 													</td>
 													<td></td>
@@ -517,8 +516,8 @@ td, th {
 													<td>Y</td>
 													<td ></td>
 													<td></td>
-													<td th:text="${#dates.format(list.cgDateTime, 'yyyy-MM-dd HH:mm:ss')}"></td>
-													<td th:text="${#dates.format(list.cgFixDate, 'yyyy-MM-dd HH:mm:ss')}"></td>
+													<td ></td>
+													<td ></td>
 												</tr>
 											</tbody>
 										</table>
